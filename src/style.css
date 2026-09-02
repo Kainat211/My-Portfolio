@@ -1,0 +1,10 @@
+@import "tailwindcss";
+.skill-card {
+    @apply p-6 rounded-2xl bg-white/5 border border-white/10
+           text-center transition duration-300;
+}
+
+.skill-card:hover {
+    @apply -translate-y-2 border-purple-500
+           shadow-lg shadow-purple-500/10;
+}
