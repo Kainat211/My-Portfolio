@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 .skill-card {
     @apply p-6 rounded-2xl bg-white/5 border border-white/10
            text-center transition duration-300;
@@ -7,4 +8,42 @@
 .skill-card:hover {
     @apply -translate-y-2 border-purple-500
            shadow-lg shadow-purple-500/10;
+}
+
+/* Theme transition - ONLY body */
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* LIGHT THEME */
+body.light-theme {
+    background: #f7f5ff !important;
+    color: #222 !important;
+}
+
+body.light-theme nav {
+    background: white !important;
+    border-color: #ddd !important;
+}
+
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3 {
+    color: #222 !important;
+}
+
+body.light-theme .text-gray-300 {
+    color: #444 !important;
+}
+
+body.light-theme .text-gray-400 {
+    color: #555 !important;
+}
+
+body.light-theme .bg-\[\#0d111a\] {
+    background: white !important;
+}
+
+body.light-theme .bg-\[\#080b12\] {
+    background: white !important;
 }
