@@ -61,3 +61,11 @@ body.light-theme .bg-\[\#080b12\] {
 .light-theme .logo {
     color: #222222 !important;
 }
+/* Hamburger in light theme */
+body.light-theme #menuBtn {
+    color: #222 !important;
+}
+
+body.light-theme #menuBtn:hover {
+    background: #eeeeee !important;
+}
