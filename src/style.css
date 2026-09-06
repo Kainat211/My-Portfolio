@@ -18,6 +18,7 @@ body {
 /* LIGHT THEME */
 body.light-theme {
     background: #f7f5ff !important;
+    background-image: none !important;
     color: #222 !important;
 }
 
