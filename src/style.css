@@ -26,7 +26,11 @@ body.light-theme nav {
     background: white !important;
     border-color: #ddd !important;
 }
+/* Navbar logo in light theme */
 
+body.light-theme nav a:first-child {
+    color: #222 !important;
+}
 body.light-theme h1,
 body.light-theme h2,
 body.light-theme h3 {
@@ -47,4 +51,13 @@ body.light-theme .bg-\[\#0d111a\] {
 
 body.light-theme .bg-\[\#080b12\] {
     background: white !important;
+}
+/* KAINAT logo color */
+
+.logo {
+    color: white !important;
+}
+
+.light-theme .logo {
+    color: #222222 !important;
 }

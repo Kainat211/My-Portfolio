@@ -13,23 +13,22 @@
              to-[#4b287d]
              text-white">
 <!-- ================= NAVBAR ================= -->
+<nav class="bg-transparent border-b border-white/10 relative z-50">
 
-<nav class="w-full bg-transparent border-b border-white/10">
-
-    <div class="max-w-7xl mx-auto px-5 md:px-6 py-5
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-4 sm:py-5
                 flex items-center justify-between">
 
-        <!-- Logo -->
-        <h1 class="text-2xl font-bold text-white">
-            KAINAT
-        </h1>
+        <!-- LOGO -->
+    <a href="#home"
+   class="text-2xl sm:text-3xl font-bold text-white">
+    KAINAT
+</a>
 
-
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center gap-8">
+        <!-- DESKTOP MENU -->
+        <div class="hidden md:flex items-center gap-6 lg:gap-8">
 
             <a href="#home"
-               class="text-purple-400 hover:text-purple-300 transition">
+               class="text-gray-300 hover:text-purple-400 transition">
                 Home
             </a>
 
@@ -55,122 +54,97 @@
 
         </div>
 
+        <!-- RIGHT SIDE -->
+        <div class="flex items-center gap-2 sm:gap-4">
 
-        <!-- Desktop Buttons -->
-        <div class="hidden md:flex items-center gap-4">
-
-            <!-- Theme Button -->
+            <!-- THEME BUTTON -->
             <button id="themeBtn"
-                    class="w-10 h-10
-                           rounded-lg
-                           border border-white/10
-                           flex items-center justify-center
-                           text-white
-                           hover:border-purple-500
-                           transition">
-
+                    class="w-10 h-10 flex items-center justify-center
+                           rounded-full text-gray-300
+                           hover:text-purple-400 transition">
                 <i class="fa-solid fa-sun"></i>
+            </button>
+
+            <!-- DESKTOP HIRE ME -->
+            <a href="#contact"
+               class="hidden md:inline-flex
+                      px-7 py-4
+                      rounded-full
+                      bg-purple-600
+                      text-white
+                      hover:bg-purple-700
+                      transition">
+                Hire Me
+            </a>
+
+            <!-- MOBILE HAMBURGER -->
+            <button id="menuBtn"
+                    class="md:hidden
+                           w-10 h-10
+                           flex items-center justify-center
+                           text-white text-2xl
+                           rounded-lg
+                           hover:bg-white/10
+                           transition"
+                    aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
 
             </button>
 
-
-            <!-- Hire Me -->
-            <a href="#contact"
-               class="bg-purple-500
-                      hover:bg-purple-700
-                      px-6 py-3
-                      rounded-lg
-                      font-medium
-                      transition">
-
-                Hire Me
-                <span class="ml-2">→</span>
-
-            </a>
-
         </div>
-
-
-        <!-- ================= MOBILE HAMBURGER ================= -->
-
-        <button id="menuBtn"
-                type="button"
-                class="md:hidden
-                       w-10 h-10
-                       rounded-lg
-                       border border-white/20
-                       flex items-center justify-center
-                       text-white
-                       hover:border-purple-500
-                       transition">
-
-            <i class="fa-solid fa-bars text-xl"></i>
-
-        </button>
 
     </div>
 
 
     <!-- ================= MOBILE MENU ================= -->
-
     <div id="mobileMenu"
-         class="hidden md:hidden px-5 pb-5">
+         class="hidden md:hidden
+                border-t border-white/10
+                px-4 sm:px-6 pb-5">
 
-        <div class="bg-[#0d111a]
-                    border border-white/10
-                    rounded-2xl
-                    p-5
-                    flex flex-col
-                    gap-4">
+        <div class="flex flex-col gap-4 pt-5">
 
             <a href="#home"
-               class="text-purple-400
-                      hover:text-purple-300
-                      transition">
+               class="mobile-link text-gray-300
+                      hover:text-purple-400 transition">
                 Home
             </a>
 
             <a href="#about"
-               class="text-gray-300
-                      hover:text-purple-400
-                      transition">
+               class="mobile-link text-gray-300
+                      hover:text-purple-400 transition">
                 About
             </a>
 
             <a href="#skills"
-               class="text-gray-300
-                      hover:text-purple-400
-                      transition">
+               class="mobile-link text-gray-300
+                      hover:text-purple-400 transition">
                 Skills
             </a>
 
             <a href="#projects"
-               class="text-gray-300
-                      hover:text-purple-400
-                      transition">
+               class="mobile-link text-gray-300
+                      hover:text-purple-400 transition">
                 Projects
             </a>
 
             <a href="#contact"
-               class="text-gray-300
-                      hover:text-purple-400
-                      transition">
+               class="mobile-link text-gray-300
+                      hover:text-purple-400 transition">
                 Contact
             </a>
 
-
-            <!-- Mobile Hire Me -->
             <a href="#contact"
-               class="bg-purple-500
+               class="mobile-link
+                      inline-flex justify-center
+                      px-7 py-3
+                      rounded-full
+                      bg-purple-600
+                      text-white
                       hover:bg-purple-700
-                      px-5 py-3
-                      rounded-lg
-                      text-center
-                      font-medium
                       transition">
-
-                Hire Me →
-
+                Hire Me
             </a>
 
         </div>
@@ -179,7 +153,6 @@
 
 </nav>
 <!-- ================= HERO SECTION ================= -->
-
 <section id="home"
          class="min-h-[90vh]
                 max-w-7xl
@@ -191,122 +164,59 @@
                 gap-10 md:gap-12
                 items-center
                 overflow-hidden">
-
-
     <!-- ================= LEFT SIDE ================= -->
-
-    <div class="w-full">
-
+    <div>
         <!-- Small Heading -->
-
         <p class="text-purple-400
-                  uppercase
-                  tracking-[2px] md:tracking-[4px]
-                  text-sm md:text-2xl
-                  font-semibold
-                  mb-5">
-
+                  uppercase tracking-[4px] text-2xl font-semibold mb-5">
             Hello, I'm Kainat 👋
-
         </p>
-
-
         <!-- Main Heading -->
 
-        <h1 class="text-4xl
-                   sm:text-5xl
-                   md:text-7xl
-                   font-bold
-                   leading-[1.05]">
-
+       <h1 class="text-4xl sm:text-5xl md:text-7xl
+           font-bold
+           leading-tight">
             Building
-
             <span class="text-purple-500">
                 Digital
             </span>
-
             <br>
-
             Experiences.
-
         </h1>
-
-
         <!-- Description -->
-
-        <p class="text-gray-400
-                  text-base md:text-lg
-                  leading-7 md:leading-8
-                  max-w-xl
-                  mt-7">
-
+        <p class="text-gray-400 text-lg leading-8 max-w-xl mt-7">
             I create modern, responsive and
             user-friendly websites that combine
             beautiful design with powerful
             functionality.
-
         </p>
-
-
         <!-- Buttons -->
-
-        <div class="flex
-                    flex-wrap
-                    gap-3 md:gap-4
-                    mt-8 md:mt-9">
-
+        <div class="flex flex-wrap  gap-4  mt-9">
             <!-- View Work Button -->
-
             <a href="#projects"
                class="bg-purple-600
-                      hover:bg-purple-700
-                      px-5 md:px-7
-                      py-3 md:py-4
-                      rounded-xl
-                      font-semibold
-                      text-sm md:text-base
+                      hover:bg-purple-700 px-7  py-4  rounded-xl  font-semibold
                       transition duration-300
                       hover:shadow-[0_0_25px_rgba(139,92,246,0.5)]">
-
                 View My Work
-
                 <span class="ml-2">
                     →
                 </span>
-
             </a>
-
-
             <!-- Contact Button -->
-
             <a href="#contact"
                class="border
                       border-white/20
                       hover:border-purple-500
-                      px-5 md:px-7
-                      py-3 md:py-4
-                      rounded-xl
-                      font-semibold
-                      text-sm md:text-base
+                      px-7 py-4 rounded-xl font-semibold
                       text-gray-300
-                      hover:text-white
-                      transition duration-300">
-
+                      hover:text-white transition duration-300">
                 Contact Me
-
             </a>
-
         </div>
-
-
         <!-- Social Icons -->
 
-        <div class="flex
-                    items-center
-                    gap-4 md:gap-5
-                    mt-8 md:mt-10
-                    flex-wrap">
-
+        <div class="flex items-center  gap-5  mt-10">
             <p class="text-gray-500 text-sm">
                 Follow me
             </p>
@@ -315,252 +225,196 @@
             <!-- Github -->
 
             <a href="https://github.com/Kainat211"
-               class="w-10 h-10
-                      rounded-full
-                      border
+               class="w-10  h-10  rounded-full border
                       border-white/10
-                      flex
-                      items-center
-                      justify-center
+                      flex  items-center  justify-center
                       text-gray-400
                       hover:text-purple-400
                       hover:border-purple-500
-                      transition duration-300">
-
+                      transition  duration-300">
                 <i class="fa-brands fa-github"></i>
-
             </a>
-
-
             <!-- LinkedIn -->
-
             <a href="https://www.linkedin.com/in/aiman-raheem-raheem-a834362b8/"
-               class="w-10 h-10
-                      rounded-full
-                      border
-                      border-white/10
-                      flex
-                      items-center
-                      justify-center
+               class="w-10  h-10  rounded-full
+                      border  border-white/10
+                      flex  items-center  justify-center
                       text-gray-400
                       hover:text-purple-400
                       hover:border-purple-500
-                      transition duration-300">
-
+                      transition  duration-300">
                 <i class="fa-brands fa-linkedin-in"></i>
-
             </a>
-
-
             <!-- Instagram -->
-
             <a href="#"
-               class="w-10 h-10
-                      rounded-full
-                      border
-                      border-white/10
-                      flex
-                      items-center
-                      justify-center
+               class="w-10  h-10  rounded-full
+                      border  border-white/10
+                      flex  items-center  justify-center
                       text-gray-400
                       hover:text-purple-400
                       hover:border-purple-500
-                      transition duration-300">
-
+                      transition  duration-300">
                 <i class="fa-brands fa-instagram"></i>
-
             </a>
-
         </div>
-
     </div>
+ <!-- ================= RIGHT SIDE ================= -->
+<div class="relative
+            flex
+            justify-center
+            items-center
+            min-h-[380px]
+            sm:min-h-[430px]
+            md:min-h-[550px]">
+    <!-- Purple Glow -->
+   <div class="absolute
+            w-[300px]
+            h-[300px]
+            sm:w-[350px]
+            sm:h-[350px]
+            md:w-[530px]
+            md:h-[530px]
+            bg-purple-600/25
+            rounded-full
+            blur-3xl">
+</div>
+
+    <!-- Outer Circle -->
+
+ <div class="absolute
+            w-[290px]
+            h-[290px]
+            sm:w-[340px]
+            sm:h-[340px]
+            md:w-[500px]
+            md:h-[500px]
+            rounded-full
+            border-2
+            border-purple-500/30
+            shadow-[0_0_60px_rgba(139,92,246,0.15)]">
+</div>
 
 
+    <!-- ================= IMAGE CIRCLE ================= -->
 
-    <!-- ================= RIGHT SIDE ================= -->
+<!-- IMAGE CONTAINER -->
+<div class="relative
+            w-[280px]
+            h-[280px]
+            sm:w-[330px]
+            sm:h-[330px]
+            md:w-[500px]
+            md:h-[500px]
+            rounded-full
+            overflow-hidden
+            border-2
+            border-purple-400
+            shadow-[0_0_35px_rgba(168,85,247,0.8)]">
 
-    <div class="relative
+    <!-- YOUR IMAGE -->
+    <img src="./public/imageee.png"
+         alt="Aiman"
+         class="w-full 
+                h-full 
+                rounded-full 
+                block 
+                object-contain 
+                object-center">
+</div>
+    <!-- ================= HTML ICON ================= -->
+
+    <div class="absolute
+                top-9
+                left-0
+                md:left-1.5
+                z-20
+                w-16
+                h-16
+                rounded-2xl
+                bg-[#0d111a]
+                border
+                border-orange-500/40
                 flex
-                justify-center
                 items-center
-                min-h-[350px]
-                sm:min-h-[400px]
-                md:min-h-[550px]
-                w-full">
+                justify-center
+                shadow-lg
+                hover:scale-110
+                hover:border-orange-500
+                transition
+                duration-300">
 
-
-        <!-- ================= PURPLE GLOW ================= -->
-
-        <div class="absolute
-                    w-[300px]
-                    h-[300px]
-                    sm:w-[350px]
-                    sm:h-[350px]
-                    md:w-[530px]
-                    md:h-[530px]
-                    bg-purple-600/25
-                    rounded-full
-                    blur-3xl">
-        </div>
-
-
-
-        <!-- ================= OUTER CIRCLE ================= -->
-
-        <div class="absolute
-                    w-[290px]
-                    h-[290px]
-                    sm:w-[340px]
-                    sm:h-[340px]
-                    md:w-[500px]
-                    md:h-[500px]
-                    rounded-full
-                    border-2
-                    border-purple-500/30
-                    shadow-[0_0_60px_rgba(139,92,246,0.15)]">
-        </div>
-
-
-
-        <!-- ================= IMAGE CIRCLE ================= -->
-
-        <div class="relative
-                    w-[280px]
-                    h-[280px]
-                    sm:w-[330px]
-                    sm:h-[330px]
-                    md:w-[500px]
-                    md:h-[500px]
-                    rounded-full
-                    overflow-hidden
-                    border-2
-                    border-purple-400
-                    shadow-[0_0_35px_rgba(168,85,247,0.8)]">
-
-
-            <!-- YOUR IMAGE -->
-
-            <img src="./public/imageee.png"
-                 alt="Aiman"
-                 class="w-full
-                        h-full
-                        rounded-full
-                        block
-                        object-cover
-                        object-center">
-
-        </div>
-
-
-
-        <!-- ================= HTML ICON ================= -->
-
-        <div class="absolute
-                    top-2
-                    left-4
-                    sm:top-5
-                    sm:left-8
-                    md:top-9
-                    md:left-1.5
-                    z-20
-                    w-12
-                    h-12
-                    md:w-16
-                    md:h-16
-                    rounded-2xl
-                    bg-[#0d111a]
-                    border
-                    border-orange-500/40
-                    flex
-                    items-center
-                    justify-center
-                    shadow-lg
-                    hover:scale-110
-                    hover:border-orange-500
-                    transition
-                    duration-300">
-
-            <i class="fa-brands fa-html5
-                      text-orange-500
-                      text-2xl md:text-3xl">
-            </i>
-
-        </div>
-
-
-
-        <!-- ================= JAVASCRIPT ICON ================= -->
-
-        <div class="absolute
-                    bottom-2
-                    right-4
-                    sm:bottom-5
-                    sm:right-8
-                    md:bottom-10
-                    md:right-2
-                    z-20
-                    w-12
-                    h-12
-                    md:w-16
-                    md:h-16
-                    rounded-2xl
-                    bg-[#0d111a]
-                    border
-                    border-yellow-500/40
-                    flex
-                    items-center
-                    justify-center
-                    shadow-lg
-                    hover:scale-110
-                    hover:border-yellow-400
-                    transition
-                    duration-300">
-
-            <i class="fa-brands fa-js
-                      text-yellow-400
-                      text-2xl md:text-3xl">
-            </i>
-
-        </div>
-
-
-
-        <!-- ================= TAILWIND ICON ================= -->
-
-        <div class="absolute
-                    bottom-20
-                    left-4
-                    sm:bottom-24
-                    sm:left-8
-                    md:bottom-32
-                    md:left-[-20px]
-                    z-20
-                    w-12
-                    h-12
-                    md:w-16
-                    md:h-16
-                    rounded-2xl
-                    bg-[#0d111a]
-                    border
-                    border-cyan-500/40
-                    flex
-                    items-center
-                    justify-center
-                    shadow-lg
-                    hover:scale-110
-                    hover:border-cyan-400
-                    transition
-                    duration-300">
-
-            <i class="fa-solid fa-wind
-                      text-cyan-400
-                      text-2xl md:text-3xl">
-            </i>
-
-        </div>
-
+        <i class="fa-brands fa-html5
+                  text-orange-500
+                  text-3xl">
+        </i>
 
     </div>
+
+
+
+    <!-- ================= JAVASCRIPT ICON ================= -->
+
+    <div class="absolute
+                bottom-10
+                right-0
+                md:right-2
+                z-20
+                w-16
+                h-16
+                rounded-2xl
+                bg-[#0d111a]
+                border
+                border-yellow-500/40
+                flex
+                items-center
+                justify-center
+                shadow-lg
+                hover:scale-110
+                hover:border-yellow-400
+                transition
+                duration-300">
+
+        <i class="fa-brands fa-js
+                  text-yellow-400
+                  text-3xl">
+        </i>
+
+    </div>
+
+
+
+    <!-- ================= TAILWIND ICON ================= -->
+
+    <div class="absolute
+                bottom-32
+                left-0
+                md:left-[-20px]
+                z-20
+                w-16
+                h-16
+                rounded-2xl
+                bg-[#0d111a]
+                border
+                border-cyan-500/40
+                flex
+                items-center
+                justify-center
+                shadow-lg
+                hover:scale-110
+                hover:border-cyan-400
+                transition
+                duration-300">
+
+        <i class="fa-solid fa-wind
+                  text-cyan-400
+                  text-3xl">
+        </i>
+
+    </div>
+
+
+</div>
+
 
 </section>
 <!-- ================= ABOUT SECTION ================= -->
@@ -2501,291 +2355,291 @@
                     </a>
 
 
-                     <a href="https://www.linkedin.com/in/aiman-raheem-raheem-a834362b8/"
-                       class="w-10
-                              h-10
-                              rounded-xl
-                              border
-                              border-white/10
-                              flex
-                              items-center
-                              justify-center
-                              text-black-400
-                              hover:text-white
-                              hover:border-purple-500
-                              hover:bg-purple-500/10
-                              transition
-                              duration-300">
-
-                        <i class="fa-brands fa-linkedin-in"></i>
-
-                    </a>
-
-
-                    <a href="#"
-                       class="w-10
-                              h-10
-                              rounded-xl
-                              border
-                              border-white/10
-                              flex
-                              items-center
-                              justify-center
-                              text-black-400
-                              hover:text-white
-                              hover:border-purple-500
-                              hover:bg-purple-500/10
-                              transition
-                              duration-300">
-
-                        <i class="fa-brands fa-instagram"></i>
-
-                    </a>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- ================= QUICK LINKS ================= -->
-
-            <div>
-
-                <h3 class="text-white
-                           font-semibold
-                           mb-5">
-
-                    Quick Links
-
-                </h3>
-
-
-                <ul class="space-y-3">
-
-
-                    <li>
-
-                        <a href="#home"
-                           class="text-black-500
-                                  hover:text-purple-400
-                                  transition">
-
-                            Home
-
-                        </a>
-
-                    </li>
-
-
-                    <li>
-
-                        <a href="#about"
-                           class="text-black-500
-                                  hover:text-purple-400
-                                  transition">
-
-                            About
-
-                        </a>
-
-                    </li>
-
-
-                    <li>
-
-                        <a href="#skills"
-                           class="text-black-500
-                                  hover:text-purple-400
-                                  transition">
-
-                            Skills
-
-                        </a>
-
-                    </li>
-
-
-                    <li>
-
-                        <a href="#projects"
-                           class="text-black-500
-                                  hover:text-purple-400
-                                  transition">
-
-                            Projects
-
-                        </a>
-
-                    </li>
-
-
-                    <li>
-
-                        <a href="#contact"
-                           class="text-black-500
-                                  hover:text-purple-400
-                                  transition">
-
-                            Contact
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-            <!-- ================= SERVICES ================= -->
-
-            <div>
-
-                <h3 class="text-white
-                           font-semibold
-                           mb-5">
-
-                    Services
-
-                </h3>
-
-
-                <ul class="space-y-3">
-
-
-                    <li>
-
-                        <span class="text-black-500">
-
-                            Web Development
-
-                        </span>
-
-                    </li>
-
-
-                    <li>
-
-                        <span class="text-black-500">
-
-                            Responsive Design
-
-                        </span>
-
-                    </li>
-
-
-                    <li>
-
-                        <span class="text-black-500">
-
-                            UI / UX Design
-
-                        </span>
-
-                    </li>
-
-
-                    <li>
-
-                        <span class="text-black-500">
-
-                            Frontend Development
-
-                        </span>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-        </div>
-
-
-
-        <!-- ================= BOTTOM FOOTER ================= -->
-
-        <div class="flex
-                    flex-col
-                    md:flex-row
-                    items-center
-                    justify-between
-                    gap-4
-                    pt-7">
-
-
-            <!-- Copyright -->
-
-            <p class="text-black-600
-                      text-sm">
-
-                © 2026 Kainat. All rights reserved.
-
-            </p>
-
-
-            <!-- Bottom Links -->
-
-            <div class="flex
-                        items-center
-                        gap-6
-                        text-sm">
-
-
-                <a href="#"
-                   class="text-black-600
-                          hover:text-gray-300
-                          transition">
-
-                    Privacy Policy
-
-                </a>
-
-
-                <a href="#"
-                   class="text-black-600
-                          hover:text-gray-300
-                          transition">
-
-                    Terms
-
-                </a>
-
-
-                <!-- Back To Top -->
-
-                <a href="#home"
-                   class="w-9
-                          h-9
-                          rounded-lg
-                          border
-                          border-white/10
-                          flex
-                          items-center
-                          justify-center
-                          text-black-400
-                          hover:text-purple-400
-                          hover:border-purple-500
-                          transition">
-
-                    <i class="fa-solid fa-arrow-up"></i>
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</footer>
-
-
-<script type="module" src="src/main.js"></script>
-</body>
-</html>
+                     <a href="https://www.linkedin.com/in/aiman-raheem-raheem-a834362b8/" 
+                       class="w-10 
+                              h-10 
+                              rounded-xl 
+                              border 
+                              border-white/10 
+                              flex 
+                              items-center 
+                              justify-center 
+                              text-black-400 
+                              hover:text-white 
+                              hover:border-purple-500 
+                              hover:bg-purple-500/10 
+                              transition 
+                              duration-300"> 
+ 
+                        <i class="fa-brands fa-linkedin-in"></i> 
+ 
+                    </a> 
+ 
+ 
+                    <a href="#" 
+                       class="w-10 
+                              h-10 
+                              rounded-xl 
+                              border 
+                              border-white/10 
+                              flex 
+                              items-center 
+                              justify-center 
+                              text-black-400 
+                              hover:text-white 
+                              hover:border-purple-500 
+                              hover:bg-purple-500/10 
+                              transition 
+                              duration-300"> 
+ 
+                        <i class="fa-brands fa-instagram"></i> 
+ 
+                    </a> 
+ 
+                </div> 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- ================= QUICK LINKS ================= --> 
+ 
+            <div> 
+ 
+                <h3 class="text-white 
+                           font-semibold 
+                           mb-5"> 
+ 
+                    Quick Links 
+ 
+                </h3> 
+ 
+ 
+                <ul class="space-y-3"> 
+ 
+ 
+                    <li> 
+ 
+                        <a href="#home" 
+                           class="text-black-500 
+                                  hover:text-purple-400 
+                                  transition"> 
+ 
+                            Home 
+ 
+                        </a> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <a href="#about" 
+                           class="text-black-500 
+                                  hover:text-purple-400 
+                                  transition"> 
+ 
+                            About 
+ 
+                        </a> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <a href="#skills" 
+                           class="text-black-500 
+                                  hover:text-purple-400 
+                                  transition"> 
+ 
+                            Skills 
+ 
+                        </a> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <a href="#projects" 
+                           class="text-black-500 
+                                  hover:text-purple-400 
+                                  transition"> 
+ 
+                            Projects 
+ 
+                        </a> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <a href="#contact" 
+                           class="text-black-500 
+                                  hover:text-purple-400 
+                                  transition"> 
+ 
+                            Contact 
+ 
+                        </a> 
+ 
+                    </li> 
+ 
+                </ul> 
+ 
+            </div> 
+ 
+ 
+ 
+            <!-- ================= SERVICES ================= --> 
+ 
+            <div> 
+ 
+                <h3 class="text-white 
+                           font-semibold 
+                           mb-5"> 
+ 
+                    Services 
+ 
+                </h3> 
+ 
+ 
+                <ul class="space-y-3"> 
+ 
+ 
+                    <li> 
+ 
+                        <span class="text-black-500"> 
+ 
+                            Web Development 
+ 
+                        </span> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <span class="text-black-500"> 
+ 
+                            Responsive Design 
+ 
+                        </span> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <span class="text-black-500"> 
+ 
+                            UI / UX Design 
+ 
+                        </span> 
+ 
+                    </li> 
+ 
+ 
+                    <li> 
+ 
+                        <span class="text-black-500"> 
+ 
+                            Frontend Development 
+ 
+                        </span> 
+ 
+                    </li> 
+ 
+                </ul> 
+ 
+            </div> 
+ 
+ 
+        </div> 
+ 
+ 
+ 
+        <!-- ================= BOTTOM FOOTER ================= --> 
+ 
+        <div class="flex 
+                    flex-col 
+                    md:flex-row 
+                    items-center 
+                    justify-between 
+                    gap-4 
+                    pt-7"> 
+ 
+ 
+            <!-- Copyright --> 
+ 
+            <p class="text-black-600 
+                      text-sm"> 
+ 
+                © 2026 Kainat. All rights reserved. 
+ 
+            </p> 
+ 
+ 
+            <!-- Bottom Links --> 
+ 
+            <div class="flex 
+                        items-center 
+                        gap-6 
+                        text-sm"> 
+ 
+ 
+                <a href="#" 
+                   class="text-black-600 
+                          hover:text-gray-300 
+                          transition"> 
+ 
+                    Privacy Policy 
+ 
+                </a> 
+ 
+ 
+                <a href="#" 
+                   class="text-black-600 
+                          hover:text-gray-300 
+                          transition"> 
+ 
+                    Terms 
+ 
+                </a> 
+ 
+ 
+                <!-- Back To Top --> 
+ 
+                <a href="#home" 
+                   class="w-9 
+                          h-9 
+                          rounded-lg 
+                          border 
+                          border-white/10 
+                          flex 
+                          items-center 
+                          justify-center 
+                          text-black-400 
+                          hover:text-purple-400 
+                          hover:border-purple-500 
+                          transition"> 
+ 
+                    <i class="fa-solid fa-arrow-up"></i> 
+ 
+                </a> 
+ 
+            </div> 
+ 
+        </div> 
+ 
+ 
+    </div> 
+ 
+</footer> 
+ 
+ 
+<script type="module" src="src/main.js"></script> 
+</body> 
+</html>     
